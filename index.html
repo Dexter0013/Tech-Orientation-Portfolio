@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of a Creative Frontend Developer specializing in playful and intuitive web experiences.">
+    <meta name="keywords" content="Frontend Developer, Web Developer, React, JavaScript, Portfolio">
+    <title>Web Developer Portfolio</title>
+    <!-- Importing a sleek, modern font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Live Custom 3D Background Canvas -->
+    <div id="canvas-bg"></div>
+    
+    <nav class="navbar">
+        <div class="logo">Slasher<span>Sloth</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button></li>
+        </ul>
+        <div class="hamburger" role="button" aria-label="Toggle navigation" aria-expanded="false" tabindex="0">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="card hero-text-card">
+                <h1>Hi, I'm <span class="highlight">SlasherSloth</span>.</h1>
+                <h2>I build <span class="typing">playful web experiences.</span></h2>
+                <p>A Creative Frontend Developer turning complex problems into beautiful, intuitive designs.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">See My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&backgroundColor=ffdfbf" alt="SlasherSloth's Avatar">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <div class="about-text card">
+                <h3>My Story</h3>
+                <p>I'm a self-taught web developer with a passion for creating interactive and dynamic user experiences. When I'm not writing code or looking for bugs, you can find me exploring new design trends, playing indie video games, or drinking way too much coffee.</p>
+                <div style="margin-top: 1.5rem;">
+                    <a href="#" class="btn btn-primary" download>Download Resume</a>
+                </div>
+            </div>
+            <div class="skills card">
+                <h3>Superpowers</h3>
+                <div class="skill-tags">
+                    <span class="tag">HTML5 & CSS3</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Figma</span>
+                    <span class="tag">Tailwind CSS</span>
+                    <span class="tag">Git & GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-title">Cool Stuff I've Built</h2>
+        <div class="project-grid">
+            <!-- Project 1 -->
+            <div class="project-card card">
+                <div class="project-img highlight-pink"></div>
+                <div class="project-info">
+                    <h3>Color Pop App</h3>
+                    <p>A vibrant task manager built to make productivity fun and engaging. Features drag-and-drop and dark mode.</p>
+                    <div class="project-tech">
+                        <span>React</span> <span>CSS Modules</span>
+                    </div>
+                    <a href="#" class="btn btn-outline">Live Demo</a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card card">
+                <div class="project-img highlight-yellow"></div>
+                <div class="project-info">
+                    <h3>Game Hub</h3>
+                    <p>A fast, responsive platform to track and review your favorite video games using a public API.</p>
+                    <div class="project-tech">
+                        <span>Vue</span> <span>Firebase</span>
+                    </div>
+                    <a href="#" class="btn btn-outline">Live Demo</a>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card card">
+                <div class="project-img highlight-green"></div>
+                <div class="project-info">
+                    <h3>Eco Store</h3>
+                    <p>An e-commerce mockup focusing on sustainable and green products with full cart functionality.</p>
+                    <div class="project-tech">
+                        <span>Next.js</span> <span>Stripe</span>
+                    </div>
+                    <a href="#" class="btn btn-outline">Live Demo</a>
+                </div>
+            </div>
+        </div>
+        <div class="view-all-container" style="text-align: center; margin-top: 3rem;">
+            <a href="#" class="btn btn-secondary">View All Projects</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact-container card">
+            <!-- Form spree action added to forward form submissions to an email -->
+            <form id="contact-form" action="https://formspree.io/f/your_formspree_id" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="What should I call you?">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Where can I reach you?">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Tell me about your cool idea..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message 🚀</button>
+            </form>
+            <div class="social-links">
+                <a href="mailto:your.email@example.com" class="social-btn card">Email Me</a>
+                <a href="#" class="social-btn card" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="#" class="social-btn card" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three.js and Vanta.js for Custom Live 3D Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.waves.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
