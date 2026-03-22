@@ -371,8 +371,10 @@ h1, h2, h3 {
 }
 
 .project-img {
-    height: 200px;
+    aspect-ratio: 16 / 9;
+    width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .project-img img {
@@ -455,6 +457,7 @@ label {
 }
 
 input, textarea {
+    width: 100%;
     padding: 1rem 1.25rem;
     font-family: inherit;
     border: var(--border);
@@ -580,7 +583,20 @@ textarea {
     .cta-buttons .btn {
         width: 100%;
     }
+    .social-links {
+        flex-direction: column;
+        width: 100%;
+    }
+    .social-btn,
+    #contact-form .btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
     .skill-tags {
         gap: 0.5rem;
+    }
+    .hero-image img {
+        max-width: 240px;
     }
 }

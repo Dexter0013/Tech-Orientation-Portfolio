@@ -10,6 +10,11 @@ A modern, responsive, and highly interactive personal web developer portfolio. T
 - **Dark/Light Mode Toggle**: Dynamically switches CSS variables to shift between a light mode (emerald/blue) and a deep dark mode (neo-noir ocean). Remembers your preference via `localStorage`.
 - **CSS Animations**: Subtle element floating animations, hover transformations, and playful micro-interactions.
 
+### Responsive & Fluid Layouts
+- **Ultra-Wide Scaling**: Implements sophisticated `clamp`/`max(..., calc(...))` dynamic CSS formulas to maintain perfectly crisp 1200px centered content zones across huge 4k desktop monitors without sacrificing edge-to-edge background glassmorphism spreads.
+- **Flawless Mobile Experience**: Dedicated `< 480px` media queries restructure touch targets, contact inputs, and social links to consume 100% horizontal space effortlessly. 
+- **Proportional Image Logic**: Project graphics strictly obey modern `aspect-ratio: 16/9` guidelines accompanied by `object-fit: cover` and hover constraints ensuring your graphics always scale gorgeously.
+
 ### Interactive Features & Logic
 - **Mobile Navigation Menu**: Features an animated hamburger toggle that transitions into an "X", complete with tap-away auto-closing and keyboard navigation support (`script.js`).
 - **Asynchronous Contact Form**: Fully functional form submission utilizing the Fetch API and Formspree. Includes loading states ("Sending...") and playful success/error feedback without page reloads.
