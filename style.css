@@ -372,7 +372,21 @@ h1, h2, h3 {
 
 .project-img {
     height: 200px;
+    position: relative;
 }
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover .project-img img {
+    transform: scale(1.05);
+}
+
 .highlight-pink { background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%); }
 .highlight-yellow { background: linear-gradient(135deg, #fef3c7 0%, #fde047 100%); }
 .highlight-green { background: linear-gradient(135deg, #dcfce7 0%, #86efac 100%); }
